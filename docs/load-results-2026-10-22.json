@@ -1,0 +1,1342 @@
+{
+  "started": "2026-10-22T16:19:42.9590951Z",
+  "Go": "go1.27.0",
+  "OS": "windows",
+  "Arch": "amd64",
+  "Workers": 32,
+  "auction_ids": [
+    "429feb8a-2096-4576-9d6d-3587e141ba90",
+    "51aea0ee-9cb7-4e3f-be91-17ef5c65f2ad",
+    "96b685aa-1943-4879-a034-cf28242a099e",
+    "655ce85d-11bc-4ce4-94c1-3cea00dbe53c",
+    "b8eb485f-da0f-4cff-a590-1c1361db6106",
+    "fec11d06-044d-41e8-be78-9c96d4faa655",
+    "9e78f8de-4265-4d91-8ce7-70f288bb7392",
+    "c0999f48-f0d1-47f9-9b64-4e5ce6f33884",
+    "b7a510a2-5f52-4058-accc-9bfb6c7cabb5",
+    "8b34b4d8-5241-4bea-9739-9a6bb671180c",
+    "677feed9-1db5-4ee3-8dd2-504523ed66a3",
+    "d2f27614-8e0c-4587-91dc-e68ce57da5cc",
+    "7cd696b2-eba6-4a5b-8aee-b546dc96458c",
+    "c0840525-3df1-4a5f-8377-ff220f81762f",
+    "43b3db15-d9e7-4f17-9361-ca876f30a6f5",
+    "7836baf2-a129-4c8c-91da-cafee393a1ab",
+    "dc652451-f6be-4444-81e5-c733b455577e",
+    "bef2566e-d376-46e2-806c-1dc8405b5d62",
+    "345c62fc-e5db-4734-84e5-37e30e50d46c",
+    "f306bbe0-0bb4-4aed-a33f-7ff52f38ccac",
+    "58c8ab53-8a08-4347-83e5-1a94a021d8c5",
+    "baa6fcdf-ca82-4d6c-a30b-3130290337c1",
+    "5e60d406-505a-4b6c-a497-b196de8ec328",
+    "2149a704-bc30-47f7-ade4-f97d926f98a0",
+    "bb7b19f2-de86-4f76-9bdc-334118af6b0a",
+    "05a15f95-c5f3-4e89-a130-cbe220e45dc4",
+    "e8403c59-91d6-438c-90b2-c777b7e076f6",
+    "5c1772c6-acc6-4013-a1c0-7c0fb7e5a8a6",
+    "13feb10b-db5c-4533-8463-90ce6c5a8700",
+    "9370ca52-67f5-4cf9-9462-8dc1d6b44fa9",
+    "d9236d78-e23d-4be9-866a-a76fcd64bc7b",
+    "a8eab413-a2de-4ba6-b179-ecedcde3c723"
+  ],
+  "results": [
+    {
+      "profile": "reads",
+      "target_rps": 50,
+      "seconds": 9.9824082,
+      "scheduled": 500,
+      "generator_dropped": 0,
+      "completed": 500,
+      "success": 500,
+      "success_rps": 50.0881140084013,
+      "statuses": {
+        "200": 500
+      },
+      "p95_ms": 3.3487,
+      "p99_ms": 3.8451,
+      "success_p95_ms": 3.3487,
+      "success_p99_ms": 3.8451,
+      "pass": true,
+      "status_before": {
+        "bids": {
+          "in_flight": 0,
+          "limit": 8,
+          "per_auction_limit": 2,
+          "rejected_total": 0
+        },
+        "consumer": {
+          "state": "running",
+          "last_broker_success": "2026-10-22T16:19:42.098186501Z",
+          "last_commit": "2026-10-22T16:19:42.956061394Z",
+          "lag": 0,
+          "lag_sample_at": "2026-10-22T16:19:42.091912615Z",
+          "assigned_partitions": 3,
+          "phase": "polling",
+          "in_flight": 0,
+          "commit_timeouts": 0,
+          "failures": 0,
+          "restarts": 0,
+          "records": 29
+        },
+        "database": "up",
+        "db_pool": {
+          "acquired": 0,
+          "canceled_acquires_total": 0,
+          "max": 20,
+          "total": 1
+        },
+        "lifecycle": {
+          "max_delay_seconds": 0,
+          "overdue": 0
+        },
+        "outbox": {
+          "oldest_age_seconds": 0.025647,
+          "pending": 3,
+          "retrying_auctions": 0
+        },
+        "status": "degraded",
+        "websocket": {
+          "connections": 0,
+          "max_connections": 1000,
+          "max_per_auction": 100,
+          "rejected_total": 0
+        }
+      },
+      "status_after": {
+        "bids": {
+          "in_flight": 0,
+          "limit": 8,
+          "per_auction_limit": 2,
+          "rejected_total": 0
+        },
+        "consumer": {
+          "state": "running",
+          "last_broker_success": "2026-10-22T16:19:50.99208737Z",
+          "last_commit": "2026-10-22T16:19:42.978370802Z",
+          "lag": 0,
+          "lag_sample_at": "2026-10-22T16:19:52.096214504Z",
+          "assigned_partitions": 3,
+          "phase": "polling",
+          "in_flight": 0,
+          "commit_timeouts": 0,
+          "failures": 0,
+          "restarts": 0,
+          "records": 32
+        },
+        "database": "up",
+        "db_pool": {
+          "acquired": 0,
+          "canceled_acquires_total": 0,
+          "max": 20,
+          "total": 1
+        },
+        "lifecycle": {
+          "max_delay_seconds": 0,
+          "overdue": 0
+        },
+        "outbox": {
+          "oldest_age_seconds": 0,
+          "pending": 0,
+          "retrying_auctions": 0
+        },
+        "status": "ok",
+        "websocket": {
+          "connections": 0,
+          "max_connections": 1000,
+          "max_per_auction": 100,
+          "rejected_total": 0
+        }
+      }
+    },
+    {
+      "profile": "reads",
+      "target_rps": 100,
+      "seconds": 9.9935254,
+      "scheduled": 1000,
+      "generator_dropped": 0,
+      "completed": 1000,
+      "success": 1000,
+      "success_rps": 100.06478794760456,
+      "statuses": {
+        "200": 1000
+      },
+      "p95_ms": 3.3328,
+      "p99_ms": 4.4499,
+      "success_p95_ms": 3.3328,
+      "success_p99_ms": 4.4499,
+      "pass": true,
+      "status_before": {
+        "bids": {
+          "in_flight": 0,
+          "limit": 8,
+          "per_auction_limit": 2,
+          "rejected_total": 0
+        },
+        "consumer": {
+          "state": "running",
+          "last_broker_success": "2026-10-22T16:19:50.99208737Z",
+          "last_commit": "2026-10-22T16:19:42.978370802Z",
+          "lag": 0,
+          "lag_sample_at": "2026-10-22T16:19:52.096214504Z",
+          "assigned_partitions": 3,
+          "phase": "polling",
+          "in_flight": 0,
+          "commit_timeouts": 0,
+          "failures": 0,
+          "restarts": 0,
+          "records": 32
+        },
+        "database": "up",
+        "db_pool": {
+          "acquired": 0,
+          "canceled_acquires_total": 0,
+          "max": 20,
+          "total": 1
+        },
+        "lifecycle": {
+          "max_delay_seconds": 0,
+          "overdue": 0
+        },
+        "outbox": {
+          "oldest_age_seconds": 0,
+          "pending": 0,
+          "retrying_auctions": 0
+        },
+        "status": "ok",
+        "websocket": {
+          "connections": 0,
+          "max_connections": 1000,
+          "max_per_auction": 100,
+          "rejected_total": 0
+        }
+      },
+      "status_after": {
+        "bids": {
+          "in_flight": 0,
+          "limit": 8,
+          "per_auction_limit": 2,
+          "rejected_total": 0
+        },
+        "consumer": {
+          "state": "running",
+          "last_broker_success": "2026-10-22T16:20:00.999400964Z",
+          "last_commit": "2026-10-22T16:19:42.978370802Z",
+          "lag": 0,
+          "lag_sample_at": "2026-10-22T16:20:02.090510779Z",
+          "assigned_partitions": 3,
+          "phase": "polling",
+          "in_flight": 0,
+          "commit_timeouts": 0,
+          "failures": 0,
+          "restarts": 0,
+          "records": 32
+        },
+        "database": "up",
+        "db_pool": {
+          "acquired": 0,
+          "canceled_acquires_total": 0,
+          "max": 20,
+          "total": 2
+        },
+        "lifecycle": {
+          "max_delay_seconds": 0,
+          "overdue": 0
+        },
+        "outbox": {
+          "oldest_age_seconds": 0,
+          "pending": 0,
+          "retrying_auctions": 0
+        },
+        "status": "ok",
+        "websocket": {
+          "connections": 0,
+          "max_connections": 1000,
+          "max_per_auction": 100,
+          "rejected_total": 0
+        }
+      }
+    },
+    {
+      "profile": "reads",
+      "target_rps": 200,
+      "seconds": 9.9985391,
+      "scheduled": 2000,
+      "generator_dropped": 1,
+      "completed": 1999,
+      "success": 1999,
+      "success_rps": 199.92920765794673,
+      "statuses": {
+        "200": 1999
+      },
+      "p95_ms": 3.7185,
+      "p99_ms": 12.4792,
+      "success_p95_ms": 3.7185,
+      "success_p99_ms": 12.4792,
+      "pass": false,
+      "status_before": {
+        "bids": {
+          "in_flight": 0,
+          "limit": 8,
+          "per_auction_limit": 2,
+          "rejected_total": 0
+        },
+        "consumer": {
+          "state": "running",
+          "last_broker_success": "2026-10-22T16:20:00.999400964Z",
+          "last_commit": "2026-10-22T16:19:42.978370802Z",
+          "lag": 0,
+          "lag_sample_at": "2026-10-22T16:20:02.090510779Z",
+          "assigned_partitions": 3,
+          "phase": "polling",
+          "in_flight": 0,
+          "commit_timeouts": 0,
+          "failures": 0,
+          "restarts": 0,
+          "records": 32
+        },
+        "database": "up",
+        "db_pool": {
+          "acquired": 0,
+          "canceled_acquires_total": 0,
+          "max": 20,
+          "total": 2
+        },
+        "lifecycle": {
+          "max_delay_seconds": 0,
+          "overdue": 0
+        },
+        "outbox": {
+          "oldest_age_seconds": 0,
+          "pending": 0,
+          "retrying_auctions": 0
+        },
+        "status": "ok",
+        "websocket": {
+          "connections": 0,
+          "max_connections": 1000,
+          "max_per_auction": 100,
+          "rejected_total": 0
+        }
+      },
+      "status_after": {
+        "bids": {
+          "in_flight": 0,
+          "limit": 8,
+          "per_auction_limit": 2,
+          "rejected_total": 0
+        },
+        "consumer": {
+          "state": "running",
+          "last_broker_success": "2026-10-22T16:20:11.003077208Z",
+          "last_commit": "2026-10-22T16:19:42.978370802Z",
+          "lag": 0,
+          "lag_sample_at": "2026-10-22T16:20:12.087766967Z",
+          "assigned_partitions": 3,
+          "phase": "polling",
+          "in_flight": 0,
+          "commit_timeouts": 0,
+          "failures": 0,
+          "restarts": 0,
+          "records": 32
+        },
+        "database": "up",
+        "db_pool": {
+          "acquired": 0,
+          "canceled_acquires_total": 0,
+          "max": 20,
+          "total": 7
+        },
+        "lifecycle": {
+          "max_delay_seconds": 0,
+          "overdue": 0
+        },
+        "outbox": {
+          "oldest_age_seconds": 0,
+          "pending": 0,
+          "retrying_auctions": 0
+        },
+        "status": "ok",
+        "websocket": {
+          "connections": 0,
+          "max_connections": 1000,
+          "max_per_auction": 100,
+          "rejected_total": 0
+        }
+      }
+    },
+    {
+      "profile": "reads",
+      "target_rps": 400,
+      "seconds": 9.9998577,
+      "scheduled": 4000,
+      "generator_dropped": 0,
+      "completed": 4000,
+      "success": 4000,
+      "success_rps": 400.0056920809983,
+      "statuses": {
+        "200": 4000
+      },
+      "p95_ms": 3.1995,
+      "p99_ms": 3.8107,
+      "success_p95_ms": 3.1995,
+      "success_p99_ms": 3.8107,
+      "pass": true,
+      "status_before": {
+        "bids": {
+          "in_flight": 0,
+          "limit": 8,
+          "per_auction_limit": 2,
+          "rejected_total": 0
+        },
+        "consumer": {
+          "state": "running",
+          "last_broker_success": "2026-10-22T16:20:11.003077208Z",
+          "last_commit": "2026-10-22T16:19:42.978370802Z",
+          "lag": 0,
+          "lag_sample_at": "2026-10-22T16:20:12.087766967Z",
+          "assigned_partitions": 3,
+          "phase": "polling",
+          "in_flight": 0,
+          "commit_timeouts": 0,
+          "failures": 0,
+          "restarts": 0,
+          "records": 32
+        },
+        "database": "up",
+        "db_pool": {
+          "acquired": 0,
+          "canceled_acquires_total": 0,
+          "max": 20,
+          "total": 7
+        },
+        "lifecycle": {
+          "max_delay_seconds": 0,
+          "overdue": 0
+        },
+        "outbox": {
+          "oldest_age_seconds": 0,
+          "pending": 0,
+          "retrying_auctions": 0
+        },
+        "status": "ok",
+        "websocket": {
+          "connections": 0,
+          "max_connections": 1000,
+          "max_per_auction": 100,
+          "rejected_total": 0
+        }
+      },
+      "status_after": {
+        "bids": {
+          "in_flight": 0,
+          "limit": 8,
+          "per_auction_limit": 2,
+          "rejected_total": 0
+        },
+        "consumer": {
+          "state": "running",
+          "last_broker_success": "2026-10-22T16:20:21.010419676Z",
+          "last_commit": "2026-10-22T16:19:42.978370802Z",
+          "lag": 0,
+          "lag_sample_at": "2026-10-22T16:20:22.087429557Z",
+          "assigned_partitions": 3,
+          "phase": "polling",
+          "in_flight": 0,
+          "commit_timeouts": 0,
+          "failures": 0,
+          "restarts": 0,
+          "records": 32
+        },
+        "database": "up",
+        "db_pool": {
+          "acquired": 0,
+          "canceled_acquires_total": 0,
+          "max": 20,
+          "total": 7
+        },
+        "lifecycle": {
+          "max_delay_seconds": 0,
+          "overdue": 0
+        },
+        "outbox": {
+          "oldest_age_seconds": 0,
+          "pending": 0,
+          "retrying_auctions": 0
+        },
+        "status": "ok",
+        "websocket": {
+          "connections": 0,
+          "max_connections": 1000,
+          "max_per_auction": 100,
+          "rejected_total": 0
+        }
+      }
+    },
+    {
+      "profile": "reads",
+      "target_rps": 800,
+      "seconds": 10.0010653,
+      "scheduled": 8000,
+      "generator_dropped": 0,
+      "completed": 8000,
+      "success": 8000,
+      "success_rps": 799.9147850779456,
+      "statuses": {
+        "200": 8000
+      },
+      "p95_ms": 3.2601,
+      "p99_ms": 3.7744,
+      "success_p95_ms": 3.2601,
+      "success_p99_ms": 3.7744,
+      "pass": true,
+      "status_before": {
+        "bids": {
+          "in_flight": 0,
+          "limit": 8,
+          "per_auction_limit": 2,
+          "rejected_total": 0
+        },
+        "consumer": {
+          "state": "running",
+          "last_broker_success": "2026-10-22T16:20:21.010419676Z",
+          "last_commit": "2026-10-22T16:19:42.978370802Z",
+          "lag": 0,
+          "lag_sample_at": "2026-10-22T16:20:22.087429557Z",
+          "assigned_partitions": 3,
+          "phase": "polling",
+          "in_flight": 0,
+          "commit_timeouts": 0,
+          "failures": 0,
+          "restarts": 0,
+          "records": 32
+        },
+        "database": "up",
+        "db_pool": {
+          "acquired": 0,
+          "canceled_acquires_total": 0,
+          "max": 20,
+          "total": 7
+        },
+        "lifecycle": {
+          "max_delay_seconds": 0,
+          "overdue": 0
+        },
+        "outbox": {
+          "oldest_age_seconds": 0,
+          "pending": 0,
+          "retrying_auctions": 0
+        },
+        "status": "ok",
+        "websocket": {
+          "connections": 0,
+          "max_connections": 1000,
+          "max_per_auction": 100,
+          "rejected_total": 0
+        }
+      },
+      "status_after": {
+        "bids": {
+          "in_flight": 0,
+          "limit": 8,
+          "per_auction_limit": 2,
+          "rejected_total": 0
+        },
+        "consumer": {
+          "state": "running",
+          "last_broker_success": "2026-10-22T16:20:31.017570971Z",
+          "last_commit": "2026-10-22T16:19:42.978370802Z",
+          "lag": 0,
+          "lag_sample_at": "2026-10-22T16:20:32.086370126Z",
+          "assigned_partitions": 3,
+          "phase": "polling",
+          "in_flight": 0,
+          "commit_timeouts": 0,
+          "failures": 0,
+          "restarts": 0,
+          "records": 32
+        },
+        "database": "up",
+        "db_pool": {
+          "acquired": 0,
+          "canceled_acquires_total": 0,
+          "max": 20,
+          "total": 8
+        },
+        "lifecycle": {
+          "max_delay_seconds": 0,
+          "overdue": 0
+        },
+        "outbox": {
+          "oldest_age_seconds": 0,
+          "pending": 0,
+          "retrying_auctions": 0
+        },
+        "status": "ok",
+        "websocket": {
+          "connections": 0,
+          "max_connections": 1000,
+          "max_per_auction": 100,
+          "rejected_total": 0
+        }
+      }
+    },
+    {
+      "profile": "reads",
+      "target_rps": 800,
+      "seconds": 60.0022222,
+      "scheduled": 48000,
+      "generator_dropped": 74,
+      "completed": 47926,
+      "success": 47926,
+      "success_rps": 798.7370841075283,
+      "statuses": {
+        "200": 47926
+      },
+      "p95_ms": 4.4419,
+      "p99_ms": 12.2481,
+      "success_p95_ms": 4.4419,
+      "success_p99_ms": 12.2481,
+      "pass": false,
+      "status_before": {
+        "bids": {
+          "in_flight": 0,
+          "limit": 8,
+          "per_auction_limit": 2,
+          "rejected_total": 0
+        },
+        "consumer": {
+          "state": "running",
+          "last_broker_success": "2026-10-22T16:20:31.017570971Z",
+          "last_commit": "2026-10-22T16:19:42.978370802Z",
+          "lag": 0,
+          "lag_sample_at": "2026-10-22T16:20:32.086370126Z",
+          "assigned_partitions": 3,
+          "phase": "polling",
+          "in_flight": 0,
+          "commit_timeouts": 0,
+          "failures": 0,
+          "restarts": 0,
+          "records": 32
+        },
+        "database": "up",
+        "db_pool": {
+          "acquired": 0,
+          "canceled_acquires_total": 0,
+          "max": 20,
+          "total": 8
+        },
+        "lifecycle": {
+          "max_delay_seconds": 0,
+          "overdue": 0
+        },
+        "outbox": {
+          "oldest_age_seconds": 0,
+          "pending": 0,
+          "retrying_auctions": 0
+        },
+        "status": "ok",
+        "websocket": {
+          "connections": 0,
+          "max_connections": 1000,
+          "max_per_auction": 100,
+          "rejected_total": 0
+        }
+      },
+      "status_after": {
+        "bids": {
+          "in_flight": 0,
+          "limit": 8,
+          "per_auction_limit": 2,
+          "rejected_total": 0
+        },
+        "consumer": {
+          "state": "running",
+          "last_broker_success": "2026-10-22T16:21:31.079098285Z",
+          "last_commit": "2026-10-22T16:19:42.978370802Z",
+          "lag": 0,
+          "lag_sample_at": "2026-10-22T16:21:32.093306904Z",
+          "assigned_partitions": 3,
+          "phase": "polling",
+          "in_flight": 0,
+          "commit_timeouts": 0,
+          "failures": 0,
+          "restarts": 0,
+          "records": 32
+        },
+        "database": "up",
+        "db_pool": {
+          "acquired": 0,
+          "canceled_acquires_total": 0,
+          "max": 20,
+          "total": 19
+        },
+        "lifecycle": {
+          "max_delay_seconds": 0,
+          "overdue": 0
+        },
+        "outbox": {
+          "oldest_age_seconds": 0,
+          "pending": 0,
+          "retrying_auctions": 0
+        },
+        "status": "ok",
+        "websocket": {
+          "connections": 0,
+          "max_connections": 1000,
+          "max_per_auction": 100,
+          "rejected_total": 0
+        }
+      }
+    },
+    {
+      "profile": "bids",
+      "target_rps": 50,
+      "seconds": 9.9868427,
+      "scheduled": 500,
+      "generator_dropped": 1,
+      "completed": 499,
+      "success": 499,
+      "success_rps": 49.96574142496507,
+      "statuses": {
+        "201": 499
+      },
+      "p95_ms": 8.459,
+      "p99_ms": 11.156,
+      "success_p95_ms": 8.459,
+      "success_p99_ms": 11.156,
+      "pass": false,
+      "status_before": {
+        "bids": {
+          "in_flight": 0,
+          "limit": 8,
+          "per_auction_limit": 2,
+          "rejected_total": 0
+        },
+        "consumer": {
+          "state": "running",
+          "last_broker_success": "2026-10-22T16:21:31.079098285Z",
+          "last_commit": "2026-10-22T16:19:42.978370802Z",
+          "lag": 0,
+          "lag_sample_at": "2026-10-22T16:21:32.093306904Z",
+          "assigned_partitions": 3,
+          "phase": "polling",
+          "in_flight": 0,
+          "commit_timeouts": 0,
+          "failures": 0,
+          "restarts": 0,
+          "records": 32
+        },
+        "database": "up",
+        "db_pool": {
+          "acquired": 0,
+          "canceled_acquires_total": 0,
+          "max": 20,
+          "total": 19
+        },
+        "lifecycle": {
+          "max_delay_seconds": 0,
+          "overdue": 0
+        },
+        "outbox": {
+          "oldest_age_seconds": 0,
+          "pending": 0,
+          "retrying_auctions": 0
+        },
+        "status": "ok",
+        "websocket": {
+          "connections": 0,
+          "max_connections": 1000,
+          "max_per_auction": 100,
+          "rejected_total": 0
+        }
+      },
+      "status_after": {
+        "bids": {
+          "in_flight": 0,
+          "limit": 8,
+          "per_auction_limit": 2,
+          "rejected_total": 0
+        },
+        "consumer": {
+          "state": "running",
+          "last_broker_success": "2026-10-22T16:21:33.080729575Z",
+          "last_commit": "2026-10-22T16:21:42.979476864Z",
+          "lag": 0,
+          "lag_sample_at": "2026-10-22T16:21:42.081525028Z",
+          "assigned_partitions": 3,
+          "phase": "polling",
+          "in_flight": 0,
+          "commit_timeouts": 0,
+          "failures": 0,
+          "restarts": 0,
+          "records": 528
+        },
+        "database": "up",
+        "db_pool": {
+          "acquired": 0,
+          "canceled_acquires_total": 0,
+          "max": 20,
+          "total": 19
+        },
+        "lifecycle": {
+          "max_delay_seconds": 0,
+          "overdue": 0
+        },
+        "outbox": {
+          "oldest_age_seconds": 0.044359,
+          "pending": 3,
+          "retrying_auctions": 0
+        },
+        "status": "degraded",
+        "websocket": {
+          "connections": 0,
+          "max_connections": 1000,
+          "max_per_auction": 100,
+          "rejected_total": 0
+        }
+      }
+    },
+    {
+      "profile": "bids",
+      "target_rps": 100,
+      "seconds": 9.9971755,
+      "scheduled": 1000,
+      "generator_dropped": 0,
+      "completed": 1000,
+      "success": 1000,
+      "success_rps": 100.0282529800542,
+      "statuses": {
+        "201": 1000
+      },
+      "p95_ms": 8.132,
+      "p99_ms": 10.0418,
+      "success_p95_ms": 8.132,
+      "success_p99_ms": 10.0418,
+      "pass": true,
+      "status_before": {
+        "bids": {
+          "in_flight": 0,
+          "limit": 8,
+          "per_auction_limit": 2,
+          "rejected_total": 0
+        },
+        "consumer": {
+          "state": "running",
+          "last_broker_success": "2026-10-22T16:21:33.080729575Z",
+          "last_commit": "2026-10-22T16:21:42.979476864Z",
+          "lag": 0,
+          "lag_sample_at": "2026-10-22T16:21:42.081525028Z",
+          "assigned_partitions": 3,
+          "phase": "polling",
+          "in_flight": 0,
+          "commit_timeouts": 0,
+          "failures": 0,
+          "restarts": 0,
+          "records": 528
+        },
+        "database": "up",
+        "db_pool": {
+          "acquired": 0,
+          "canceled_acquires_total": 0,
+          "max": 20,
+          "total": 19
+        },
+        "lifecycle": {
+          "max_delay_seconds": 0,
+          "overdue": 0
+        },
+        "outbox": {
+          "oldest_age_seconds": 0.050014,
+          "pending": 3,
+          "retrying_auctions": 0
+        },
+        "status": "degraded",
+        "websocket": {
+          "connections": 0,
+          "max_connections": 1000,
+          "max_per_auction": 100,
+          "rejected_total": 0
+        }
+      },
+      "status_after": {
+        "bids": {
+          "in_flight": 0,
+          "limit": 8,
+          "per_auction_limit": 2,
+          "rejected_total": 0
+        },
+        "consumer": {
+          "state": "running",
+          "last_broker_success": "2026-10-22T16:21:33.080729575Z",
+          "last_commit": "2026-10-22T16:21:52.98584045Z",
+          "lag": 0,
+          "lag_sample_at": "2026-10-22T16:21:52.085532064Z",
+          "assigned_partitions": 3,
+          "phase": "polling",
+          "in_flight": 0,
+          "commit_timeouts": 0,
+          "failures": 0,
+          "restarts": 0,
+          "records": 1526
+        },
+        "database": "up",
+        "db_pool": {
+          "acquired": 0,
+          "canceled_acquires_total": 0,
+          "max": 20,
+          "total": 19
+        },
+        "lifecycle": {
+          "max_delay_seconds": 0,
+          "overdue": 0
+        },
+        "outbox": {
+          "oldest_age_seconds": 0.044603,
+          "pending": 5,
+          "retrying_auctions": 0
+        },
+        "status": "degraded",
+        "websocket": {
+          "connections": 0,
+          "max_connections": 1000,
+          "max_per_auction": 100,
+          "rejected_total": 0
+        }
+      }
+    },
+    {
+      "profile": "bids",
+      "target_rps": 200,
+      "seconds": 10.0020713,
+      "scheduled": 2000,
+      "generator_dropped": 0,
+      "completed": 2000,
+      "success": 2000,
+      "success_rps": 199.95858257879044,
+      "statuses": {
+        "201": 2000
+      },
+      "p95_ms": 8.752,
+      "p99_ms": 10.4825,
+      "success_p95_ms": 8.752,
+      "success_p99_ms": 10.4825,
+      "pass": true,
+      "status_before": {
+        "bids": {
+          "in_flight": 0,
+          "limit": 8,
+          "per_auction_limit": 2,
+          "rejected_total": 0
+        },
+        "consumer": {
+          "state": "running",
+          "last_broker_success": "2026-10-22T16:21:33.080729575Z",
+          "last_commit": "2026-10-22T16:21:52.98584045Z",
+          "lag": 0,
+          "lag_sample_at": "2026-10-22T16:21:52.085532064Z",
+          "assigned_partitions": 3,
+          "phase": "polling",
+          "in_flight": 0,
+          "commit_timeouts": 0,
+          "failures": 0,
+          "restarts": 0,
+          "records": 1526
+        },
+        "database": "up",
+        "db_pool": {
+          "acquired": 0,
+          "canceled_acquires_total": 0,
+          "max": 20,
+          "total": 19
+        },
+        "lifecycle": {
+          "max_delay_seconds": 0,
+          "overdue": 0
+        },
+        "outbox": {
+          "oldest_age_seconds": 0.048582,
+          "pending": 5,
+          "retrying_auctions": 0
+        },
+        "status": "degraded",
+        "websocket": {
+          "connections": 0,
+          "max_connections": 1000,
+          "max_per_auction": 100,
+          "rejected_total": 0
+        }
+      },
+      "status_after": {
+        "bids": {
+          "in_flight": 0,
+          "limit": 8,
+          "per_auction_limit": 2,
+          "rejected_total": 0
+        },
+        "consumer": {
+          "state": "catching_up",
+          "last_broker_success": "2026-10-22T16:21:33.080729575Z",
+          "last_commit": "2026-10-22T16:22:03.000039656Z",
+          "lag": 1,
+          "lag_sample_at": "2026-10-22T16:22:02.083164702Z",
+          "assigned_partitions": 3,
+          "phase": "polling",
+          "in_flight": 0,
+          "commit_timeouts": 0,
+          "failures": 0,
+          "restarts": 0,
+          "records": 3523
+        },
+        "database": "up",
+        "db_pool": {
+          "acquired": 0,
+          "canceled_acquires_total": 0,
+          "max": 20,
+          "total": 19
+        },
+        "lifecycle": {
+          "max_delay_seconds": 0,
+          "overdue": 0
+        },
+        "outbox": {
+          "oldest_age_seconds": 0.039196,
+          "pending": 8,
+          "retrying_auctions": 0
+        },
+        "status": "degraded",
+        "websocket": {
+          "connections": 0,
+          "max_connections": 1000,
+          "max_per_auction": 100,
+          "rejected_total": 0
+        }
+      }
+    },
+    {
+      "profile": "bids",
+      "target_rps": 400,
+      "seconds": 10.0073707,
+      "scheduled": 4000,
+      "generator_dropped": 1,
+      "completed": 3999,
+      "success": 3992,
+      "success_rps": 398.90597837052246,
+      "statuses": {
+        "201": 3992,
+        "429": 7
+      },
+      "p95_ms": 10.6985,
+      "p99_ms": 14.8376,
+      "success_p95_ms": 10.6985,
+      "success_p99_ms": 14.8376,
+      "pass": false,
+      "status_before": {
+        "bids": {
+          "in_flight": 0,
+          "limit": 8,
+          "per_auction_limit": 2,
+          "rejected_total": 0
+        },
+        "consumer": {
+          "state": "catching_up",
+          "last_broker_success": "2026-10-22T16:21:33.080729575Z",
+          "last_commit": "2026-10-22T16:22:03.000039656Z",
+          "lag": 1,
+          "lag_sample_at": "2026-10-22T16:22:02.083164702Z",
+          "assigned_partitions": 3,
+          "phase": "polling",
+          "in_flight": 0,
+          "commit_timeouts": 0,
+          "failures": 0,
+          "restarts": 0,
+          "records": 3523
+        },
+        "database": "up",
+        "db_pool": {
+          "acquired": 0,
+          "canceled_acquires_total": 0,
+          "max": 20,
+          "total": 19
+        },
+        "lifecycle": {
+          "max_delay_seconds": 0,
+          "overdue": 0
+        },
+        "outbox": {
+          "oldest_age_seconds": 0.043675,
+          "pending": 8,
+          "retrying_auctions": 0
+        },
+        "status": "degraded",
+        "websocket": {
+          "connections": 0,
+          "max_connections": 1000,
+          "max_per_auction": 100,
+          "rejected_total": 0
+        }
+      },
+      "status_after": {
+        "bids": {
+          "in_flight": 0,
+          "limit": 8,
+          "per_auction_limit": 2,
+          "rejected_total": 7
+        },
+        "consumer": {
+          "state": "catching_up",
+          "last_broker_success": "2026-10-22T16:21:33.080729575Z",
+          "last_commit": "2026-10-22T16:22:13.039308771Z",
+          "lag": 3,
+          "lag_sample_at": "2026-10-22T16:22:12.085072627Z",
+          "assigned_partitions": 3,
+          "phase": "committing",
+          "in_flight": 4,
+          "commit_timeouts": 0,
+          "failures": 0,
+          "restarts": 0,
+          "records": 7505
+        },
+        "database": "up",
+        "db_pool": {
+          "acquired": 0,
+          "canceled_acquires_total": 0,
+          "max": 20,
+          "total": 19
+        },
+        "lifecycle": {
+          "max_delay_seconds": 0,
+          "overdue": 0
+        },
+        "outbox": {
+          "oldest_age_seconds": 0.031985,
+          "pending": 12,
+          "retrying_auctions": 0
+        },
+        "status": "degraded",
+        "websocket": {
+          "connections": 0,
+          "max_connections": 1000,
+          "max_per_auction": 100,
+          "rejected_total": 0
+        }
+      }
+    },
+    {
+      "profile": "bids",
+      "target_rps": 800,
+      "seconds": 10.0198081,
+      "scheduled": 8000,
+      "generator_dropped": 65,
+      "completed": 7935,
+      "success": 6221,
+      "success_rps": 620.8701741503412,
+      "statuses": {
+        "201": 6221,
+        "429": 1714
+      },
+      "p95_ms": 24.0724,
+      "p99_ms": 41.5253,
+      "success_p95_ms": 24.9938,
+      "success_p99_ms": 42.8411,
+      "pass": false,
+      "status_before": {
+        "bids": {
+          "in_flight": 0,
+          "limit": 8,
+          "per_auction_limit": 2,
+          "rejected_total": 7
+        },
+        "consumer": {
+          "state": "catching_up",
+          "last_broker_success": "2026-10-22T16:21:33.080729575Z",
+          "last_commit": "2026-10-22T16:22:13.046846094Z",
+          "lag": 3,
+          "lag_sample_at": "2026-10-22T16:22:12.085072627Z",
+          "assigned_partitions": 3,
+          "phase": "committing",
+          "in_flight": 2,
+          "commit_timeouts": 0,
+          "failures": 0,
+          "restarts": 0,
+          "records": 7509
+        },
+        "database": "up",
+        "db_pool": {
+          "acquired": 0,
+          "canceled_acquires_total": 0,
+          "max": 20,
+          "total": 19
+        },
+        "lifecycle": {
+          "max_delay_seconds": 0,
+          "overdue": 0
+        },
+        "outbox": {
+          "oldest_age_seconds": 0.034117,
+          "pending": 9,
+          "retrying_auctions": 0
+        },
+        "status": "degraded",
+        "websocket": {
+          "connections": 0,
+          "max_connections": 1000,
+          "max_per_auction": 100,
+          "rejected_total": 0
+        }
+      },
+      "status_after": {
+        "bids": {
+          "in_flight": 0,
+          "limit": 8,
+          "per_auction_limit": 2,
+          "rejected_total": 1721
+        },
+        "consumer": {
+          "state": "catching_up",
+          "last_broker_success": "2026-10-22T16:21:33.080729575Z",
+          "last_commit": "2026-10-22T16:22:23.089218675Z",
+          "lag": 2,
+          "lag_sample_at": "2026-10-22T16:22:22.131436978Z",
+          "assigned_partitions": 3,
+          "phase": "committing",
+          "in_flight": 4,
+          "commit_timeouts": 0,
+          "failures": 0,
+          "restarts": 0,
+          "records": 11565
+        },
+        "database": "up",
+        "db_pool": {
+          "acquired": 0,
+          "canceled_acquires_total": 0,
+          "max": 20,
+          "total": 19
+        },
+        "lifecycle": {
+          "max_delay_seconds": 0,
+          "overdue": 0
+        },
+        "outbox": {
+          "oldest_age_seconds": 3.524218,
+          "pending": 2177,
+          "retrying_auctions": 0
+        },
+        "status": "degraded",
+        "websocket": {
+          "connections": 0,
+          "max_connections": 1000,
+          "max_per_auction": 100,
+          "rejected_total": 0
+        }
+      }
+    },
+    {
+      "profile": "bids",
+      "target_rps": 200,
+      "seconds": 60.0180437,
+      "scheduled": 12000,
+      "generator_dropped": 26,
+      "completed": 11974,
+      "success": 11661,
+      "success_rps": 194.29157101966655,
+      "statuses": {
+        "201": 11661,
+        "429": 313
+      },
+      "p95_ms": 43.0271,
+      "p99_ms": 76.2908,
+      "success_p95_ms": 42.59,
+      "success_p99_ms": 72.5842,
+      "pass": false,
+      "status_before": {
+        "bids": {
+          "in_flight": 0,
+          "limit": 8,
+          "per_auction_limit": 2,
+          "rejected_total": 1721
+        },
+        "consumer": {
+          "state": "catching_up",
+          "last_broker_success": "2026-10-22T16:21:33.080729575Z",
+          "last_commit": "2026-10-22T16:22:23.108965686Z",
+          "lag": 2,
+          "lag_sample_at": "2026-10-22T16:22:22.131436978Z",
+          "assigned_partitions": 3,
+          "phase": "committing",
+          "in_flight": 5,
+          "commit_timeouts": 0,
+          "failures": 0,
+          "restarts": 0,
+          "records": 11571
+        },
+        "database": "up",
+        "db_pool": {
+          "acquired": 0,
+          "canceled_acquires_total": 0,
+          "max": 20,
+          "total": 19
+        },
+        "lifecycle": {
+          "max_delay_seconds": 0,
+          "overdue": 0
+        },
+        "outbox": {
+          "oldest_age_seconds": 3.53249,
+          "pending": 2167,
+          "retrying_auctions": 0
+        },
+        "status": "degraded",
+        "websocket": {
+          "connections": 0,
+          "max_connections": 1000,
+          "max_per_auction": 100,
+          "rejected_total": 0
+        }
+      },
+      "status_after": {
+        "bids": {
+          "in_flight": 0,
+          "limit": 8,
+          "per_auction_limit": 2,
+          "rejected_total": 2034
+        },
+        "consumer": {
+          "state": "catching_up",
+          "last_broker_success": "2026-10-22T16:21:33.080729575Z",
+          "last_commit": "2026-10-22T16:23:23.150900465Z",
+          "lag": 7,
+          "lag_sample_at": "2026-10-22T16:23:22.08074556Z",
+          "assigned_partitions": 3,
+          "phase": "committing",
+          "in_flight": 4,
+          "commit_timeouts": 0,
+          "failures": 0,
+          "restarts": 0,
+          "records": 25398
+        },
+        "database": "up",
+        "db_pool": {
+          "acquired": 0,
+          "canceled_acquires_total": 0,
+          "max": 20,
+          "total": 19
+        },
+        "lifecycle": {
+          "max_delay_seconds": 0,
+          "overdue": 0
+        },
+        "outbox": {
+          "oldest_age_seconds": 0.036054,
+          "pending": 3,
+          "retrying_auctions": 0
+        },
+        "status": "degraded",
+        "websocket": {
+          "connections": 0,
+          "max_connections": 1000,
+          "max_per_auction": 100,
+          "rejected_total": 0
+        }
+      }
+    }
+  ]
+}

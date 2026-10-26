@@ -1,0 +1,31 @@
+name: CI
+on: [push, pull_request]
+permissions:
+  contents: read
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-go@v5
+        with:
+          go-version: '1.27.3'
+          cache: true
+      - name: Formatting
+        run: test -z "$(gofmt -l cmd internal migrations tests)"
+      - run: go vet ./...
+      - name: Static analysis
+        run: go run honnef.co/go/tools/cmd/staticcheck@v0.8.1 ./...
+      - name: Check known vulnerabilities
+        run: go run golang.org/x/vuln/cmd/govulncheck@v1.9.0 ./...
+      - name: Integration and race tests with PostgreSQL and Kafka
+        run: docker compose run --rm tests
+      - name: Build application image
+        run: docker compose build api
+      - name: Infrastructure logs
+        if: failure()
+        run: docker compose logs --no-color
+      - name: Stop test infrastructure
+        if: always()
+        run: docker compose down

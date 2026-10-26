@@ -1,0 +1,152 @@
+{
+  "started": "2026-10-22T16:28:05.8792591Z",
+  "Go": "go1.27.0",
+  "OS": "windows",
+  "Arch": "amd64",
+  "Workers": 32,
+  "auction_ids": [
+    "4faa3c0e-36c9-4669-a62a-ed2e3dac68a2",
+    "4af39d1d-6242-4411-9839-975610ed21c5",
+    "3e89cd2f-922f-4401-886b-41515b248f41",
+    "5583dab0-7c67-4857-9013-76fb65fd38c0",
+    "23826803-57ba-46df-8d19-a9adc83a41d8",
+    "34dd88c9-84fb-44c4-9fb5-4fb16a0f83cd",
+    "c2fb7492-b194-4fdc-929f-1a4d4f3d6cfd",
+    "3de47982-2d0c-4510-b84f-0a0dcfa7c2fd",
+    "b63f1f5e-8a2b-4aa4-81c5-bf940e96985b",
+    "777bd195-8d85-44c9-be4d-34afec7f5071",
+    "cdf1e2b7-ef7b-4a99-84e8-e30cb4851541",
+    "7258736d-1511-439e-a37e-f5d38936d99c",
+    "dc23d9af-befe-412f-a893-5ce396c46847",
+    "c7420e74-54e7-48bc-9dab-426c7a105e15",
+    "4f7a0e6e-f57b-46c0-9cdd-956c474d42ac",
+    "5af086fe-5c84-4d77-8bcb-a1d4705cac11",
+    "3c6bc452-4e90-44a1-8ba8-4538d51eabf1",
+    "190b310e-697f-4cff-8db7-90d2d0259155",
+    "0473b323-29b0-4ce9-aebc-5dabaa3f97ac",
+    "0273daab-c55c-428d-8fa1-70826f21583c",
+    "9ed45aaf-8ef2-4f89-bd02-898336aad104",
+    "bb685147-40b5-4c49-bea0-11eb453ae4c7",
+    "495b4c02-8bea-4550-8c0c-aa43749f259a",
+    "74579f11-057d-4078-94b3-6a58ab3963b1",
+    "795ea9a7-871e-4c03-aba7-19b3e15a42cc",
+    "dff700d2-9071-462a-923e-8231cbe8d3d0",
+    "33b1fd3a-a5c1-43e3-85d4-20f8f328589e",
+    "c3e2ee0b-e0c2-4141-8d70-0705af538269",
+    "ef8ae2e5-68af-4e7a-bc6d-c0fcbe666bb1",
+    "4a7f1031-7323-4139-8752-8ccf1f709f56",
+    "23ef2b0a-4336-4832-b1a2-51365c758eb6",
+    "a708407b-b650-41bd-803e-77a515d0e43a"
+  ],
+  "results": [
+    {
+      "profile": "bids",
+      "target_rps": 50,
+      "seconds": 59.9889057,
+      "scheduled": 3000,
+      "generator_dropped": 0,
+      "completed": 3000,
+      "success": 2995,
+      "success_rps": 49.92589821487609,
+      "statuses": {
+        "201": 2995,
+        "429": 5
+      },
+      "p95_ms": 11.0451,
+      "p99_ms": 14.1813,
+      "success_p95_ms": 11.051,
+      "success_p99_ms": 14.2448,
+      "pass": true,
+      "status_before": {
+        "bids": {
+          "in_flight": 0,
+          "limit": 8,
+          "per_auction_limit": 2,
+          "rejected_total": 320
+        },
+        "consumer": {
+          "state": "running",
+          "last_broker_success": "2026-10-22T16:28:05.638551303Z",
+          "last_commit": "2026-10-22T16:28:05.829090917Z",
+          "lag": 0,
+          "lag_sample_at": "2026-10-22T16:28:04.157836021Z",
+          "assigned_partitions": 3,
+          "phase": "polling",
+          "in_flight": 0,
+          "commit_timeouts": 0,
+          "failures": 0,
+          "restarts": 0,
+          "records": 17796
+        },
+        "database": "up",
+        "db_pool": {
+          "acquired": 0,
+          "canceled_acquires_total": 0,
+          "max": 20,
+          "total": 8
+        },
+        "lifecycle": {
+          "max_delay_seconds": 0,
+          "overdue": 0
+        },
+        "outbox": {
+          "oldest_age_seconds": 0.064237,
+          "pending": 12,
+          "retrying_auctions": 0
+        },
+        "status": "degraded",
+        "websocket": {
+          "connections": 0,
+          "max_connections": 1000,
+          "max_per_auction": 100,
+          "rejected_total": 0
+        }
+      },
+      "status_after": {
+        "bids": {
+          "in_flight": 0,
+          "limit": 8,
+          "per_auction_limit": 2,
+          "rejected_total": 325
+        },
+        "consumer": {
+          "state": "running",
+          "last_broker_success": "2026-10-22T16:28:05.638551303Z",
+          "last_commit": "2026-10-22T16:29:05.909025568Z",
+          "lag": 0,
+          "lag_sample_at": "2026-10-22T16:29:04.153390787Z",
+          "assigned_partitions": 3,
+          "phase": "polling",
+          "in_flight": 0,
+          "commit_timeouts": 0,
+          "failures": 0,
+          "restarts": 0,
+          "records": 20803
+        },
+        "database": "up",
+        "db_pool": {
+          "acquired": 0,
+          "canceled_acquires_total": 0,
+          "max": 20,
+          "total": 8
+        },
+        "lifecycle": {
+          "max_delay_seconds": 0,
+          "overdue": 0
+        },
+        "outbox": {
+          "oldest_age_seconds": 0,
+          "pending": 0,
+          "retrying_auctions": 0
+        },
+        "status": "ok",
+        "websocket": {
+          "connections": 0,
+          "max_connections": 1000,
+          "max_per_auction": 100,
+          "rejected_total": 0
+        }
+      }
+    }
+  ]
+}
